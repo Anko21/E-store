@@ -20,6 +20,16 @@ function App() {
             <input className= 'form control' placeholder='Search'/>
             <button><i className='fa fa-search'/></button>
           </div>
+          <div className='login-container p-0'>
+            <i className='fa fa-user-circle user-icon'></i>
+            <h5><a href="#" >Login</a></h5> / <h5><a href="#">Register</a></h5>
+          </div>
+          <div className='cart-wishlist'>
+            <ul>
+              <li className='list-icon'><i className='fa fa-heart'/></li>
+              <li className='list-icon'><i className='fa fa-shopping-cart'/></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
