@@ -1,5 +1,5 @@
-$icon-font:1.3em;
-$element-height:2.5em;
+@import '../../style/sass/variables';
+@import '../../style/sass/mixins';
 
 
 .header{
@@ -50,10 +50,22 @@ $element-height:2.5em;
     text-decoration: none;
     color: white;
 
+    &::after{
+        content: '';
+        display: block;
+        bottom: 0;
+        left: 0;
+        height: 0.2em;
+        background-color: $accent-color ;
+        transform: scaleX(0);
+        @include transition(transform, 0.2s )
+        // transition-property: transform;
+        // transition-duration: 0.2s;
+    }
     &:hover{
-        text-decoration: underline;
-        text-decoration-color: rgb(250, 167, 181);
-        text-decoration-thickness: 3px;
+      &::after{
+        transform: scaleX(1.1)
+      }
     }
 }
 .user-icon{
@@ -73,6 +85,6 @@ $element-height:2.5em;
     margin-right: 0.5em;
 
     &:hover{
-        color: rgb(250, 167, 181);
+        color: $accent-color;
     }
 }
