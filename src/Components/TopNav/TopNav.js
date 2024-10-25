@@ -1,5 +1,5 @@
 import React from 'react'
-import './TopNav.css'
+import './_top-nav.scss'
 
 const TopNav = () => {
   return (
