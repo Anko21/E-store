@@ -49,11 +49,17 @@ $element-height:2.5em;
 .login-container a{
     text-decoration: none;
     color: white;
+
+    &:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(250, 167, 181);
+        text-decoration-thickness: 3px;
+    }
 }
 .user-icon{
     margin-right: 0.4em;
     padding: 0.2em;
-    font-size: $icon-font
+    font-size: $icon-font;
 }
 .cart-wishlist{
     width: 7%;
@@ -65,4 +71,8 @@ $element-height:2.5em;
     list-style-type: none;
     display: inline-block;
     margin-right: 0.5em;
+
+    &:hover{
+        color: rgb(250, 167, 181);
+    }
 }
