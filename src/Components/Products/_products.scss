@@ -1,0 +1,45 @@
+@import '../../style/sass/variables';
+@import '../../style/sass/mixins';
+
+@include style-reset-a-li;
+
+.products-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    .product-card{
+        margin: 1em 0;
+        box-shadow: 3px 1px 14px 0px lightgray;
+        border-radius: 0.6em;
+
+        .product-image-container{
+            display:flex;
+            justify-content: center;
+
+            img{
+                border-radius: 0.4em;
+            }
+        }
+
+        .product-info{
+            padding: 1em;
+            text-align: center;
+
+            h5{
+                font-weight:700;
+            }
+            .prduct-price{
+                margin: 0;
+                font-weight: 400;
+            }
+
+        .product-rating{
+            i{
+                color: gold;
+                font-size:small;
+            }
+        }
+        }
+    }
+}
